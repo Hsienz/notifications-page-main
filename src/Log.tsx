@@ -15,7 +15,7 @@ export default function Log(props: {
 	return (
 		<div
 			className={`log flex flex-col rounded-lg p-4 cursor-pointer transition-all ${
-				read ? "" : "bg-Light_grayish_blue_1"
+				read ? "" : "bg-Very_light_grayish_blue"
 			}`}
 			onClick={() => setRead(true)}
 		>
@@ -29,7 +29,7 @@ export default function Log(props: {
 					<p>
 						<a
 							href="#"
-							className="font-extrabold text-Very_dark_blue"
+							className="font-extrabold text-Very_dark_blue transition-all hover:text-Blue"
 						>
 							{props.userName}
 						</a>{" "}
@@ -42,16 +42,16 @@ export default function Log(props: {
 							""
 						)}
 						{props.post ? (
-							<span className="font-extrabold text-Dark_grayish_blue">
+							<a className="font-extrabold text-Dark_grayish_blue transition hover:text-Blue">
 								{props.post}
-							</span>
+							</a>
 						) : (
 							""
 						)}
 						{read ? (
 							""
 						) : (
-							<span className="bg-Red rounded-full h-2.5 w-2.5 inline-block ml-4"></span>
+							<span className="bg-Red rounded-full h-2.5 w-2.5 inline-block ml-2"></span>
 						)}
 					</p>
 					<p>{props.when}</p>

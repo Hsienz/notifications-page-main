@@ -5,7 +5,7 @@ import {logs} from './constants/logs'
 
 export default function Card() {
 	return (
-		<div className="font-sans font-medium text-Grayish_blue text-base">
+		<div className="font-sans font-medium text-Grayish_blue text-base bg-white lg:rounded-lg p-4">
 			<div>
 				<Header />
 			</div>
